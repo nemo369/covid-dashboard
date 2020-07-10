@@ -1,0 +1,17 @@
+$baseFontSize: 16;
+$black: #222;
+$white: #fdfdfe;
+$gray: #e6edf0;
+$light-gray: rgb(235, 242, 245);
+$blue: #dae9f2;
+$mobile: "(max-width: 960px),(max-device-width: 760px),(orientation: portrait)";
+html {
+  font-size: $baseFontSize;
+  font-size: 1.11vw;
+}
+body {
+  font-size: px($baseFontSize);
+}
+@function rem($pixels) {
+  @return $pixels / $baseFontSize + rem;
+}

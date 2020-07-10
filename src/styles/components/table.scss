@@ -1,0 +1,38 @@
+.table {
+    margin: 5vh auto;
+    background-color: $blue;
+    border: 1px solid $white;
+    width: 65%;
+    &__td,
+    &__th {
+        padding: rem(5) rem(10);
+        line-height: 1.5;
+    }
+    &__td {
+        border-bottom: 1px solid $white;
+    }
+    &__th {
+        text-align: left;
+        button {
+            text-decoration: underline;
+            position: relative;
+        }
+        button.active {
+            text-decoration: none;
+        }
+    }
+
+    .arrow {
+        display: inline-block;
+        position: absolute;
+        right: -1em;
+        top: 0;
+        transition: all 0.3s;
+        &.desc {
+            transform: rotate(90deg);
+        }
+        &.asc {
+            transform: rotate(-90deg);
+        }
+    }
+}
