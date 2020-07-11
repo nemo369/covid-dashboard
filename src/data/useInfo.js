@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import InfoJson from './covid-may-jul.json'
 
 export default function useInfo() {
     const url = `https://static-cdn.workiz.com/various/covid-may-jul.json`;
