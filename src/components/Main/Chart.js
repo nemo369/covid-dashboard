@@ -16,9 +16,15 @@ const Chart = ({countries}) => {
                 fill: true,
                 },
                 {
-                data: revresed.map((data) => data.confirmed_cases),
-                label: 'Confirmed Cases',
+                data: revresed.map((data) => data.daily_confirmed_cases),
+                label: 'Daily Confirmed Cases',
                 borderColor: '#1e6f20',
+                fill: false,
+                },
+                {
+                data: revresed.map((data) => data.increaseRate),
+                label: 'Increase Rate',
+                borderColor: '#e44ac6',
                 fill: false,
                 },
             ],

@@ -8,6 +8,7 @@
 // Layout: Header, footer, grid, navigation
 
 // Pages: Have a single scss for each specific page
+@import "./pages/country.scss";
 
 // Vendor: handles 3rd party css
 
@@ -15,5 +16,6 @@
 @import "./components/nav.scss";
 @import "./components/main.scss";
 @import "./components/table.scss";
+@import "./components/footer.scss";
 
 @import "./mobile.scss";

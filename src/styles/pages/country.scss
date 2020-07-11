@@ -1,0 +1,35 @@
+.country-table {
+    max-width: 50%;
+    margin: 15px auto;
+
+    h3 {
+        font-size: rem(25);
+    }
+    .table {
+        width: 100%;
+    }
+    .table__tr:hover {
+        background: $blue;
+        cursor: initial;
+    }
+}
+
+.table__tr {
+    &:hover {
+        background-color: $light-gray;
+        cursor: pointer;
+    }
+}
+.close-btn {
+    width: rem(35);
+    height: rem(35);
+    line-height: rem(35);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 8px 8px 20px 0 rgba(55, 84, 170, 0.1), -8px -8px 20px 0 #ffffff,
+        inset 5px 5px 23px 0 rgba(255, 255, 255, 0.5);
+    background-color: $light-gray;
+    &:hover {
+        box-shadow: none;
+    }
+}

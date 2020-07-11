@@ -10,7 +10,7 @@ const HeaderBar = () => {
             {
               dataTypes.map(data =>(
               <li className={dataType.id ===data.id ? 'active nav__li' : 'nav__li'} key={data.id}>
-                <button onClick={()=>toglleData(data)}>Top {numOfCountries} countries: {data.text}</button>
+                <button onClick={()=>toglleData(data)}>Top {numOfCountries} countries:<br/> {data.text}</button>
                 </li>
               ))
             }

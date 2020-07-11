@@ -1,0 +1,18 @@
+.nemo-logo {
+    transition: transform 0.5s;
+    transition-delay: 0.3s;
+    transform-origin: 70px 17px;
+    flex: 0 0 65px;
+    margin: 3vh auto;
+    &:hover {
+        transform: rotate(-45deg) translateY(-50%);
+    }
+}
+
+.nemo-logo:hover {
+    transform: rotate(-45deg) translateY(-50%);
+    #fire {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+}

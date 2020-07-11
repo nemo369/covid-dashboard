@@ -3,16 +3,21 @@
     padding: 0 15px;
     &__li button {
         width: rem(324);
-        height: rem(134);
+        height: rem(65);
+        line-height: 1.3;
         box-shadow: rem(15) rem(15) rem(40) 0 rgba(55, 84, 170, 0.1), rem(-15) rem(-15) rem(40) 0 #ffffff,
             inset rem(3) rem(3) rem(15) 0 rgba(255, 255, 255, 0.5);
         background-color: $light-gray;
         border-radius: rem(60);
         transition: background-color 0.5s ease, box-shadow 0.2s ease-in-out;
     }
+    &__li:hover button,
     &__li.active button {
         box-shadow: rem(15) rem(15) rem(40) 0 rgba(43, 47, 70, 0.1), rem(-15) rem(-15) rem(40) 0 #ffffff,
             inset rem(3) rem(3) rem(15) 0 rgba(255, 255, 255, 0.5);
+        background-color: $white;
+    }
+    &__li.active button {
         background-color: $blue;
     }
 }
