@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can find a live preview of this project in: [https://nifty-noyce-ac626c.netlify.app/](https://nifty-noyce-ac626c.netlify.app/).
 
 ## Home Task:
 Create a covid status dashboard:
