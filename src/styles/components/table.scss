@@ -36,3 +36,11 @@
         }
     }
 }
+
+.table__th,
+.table__td,
+.table__td * {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

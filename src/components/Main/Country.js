@@ -14,7 +14,7 @@ const Country = () => {
     }
     return ( 
         <div className="country-table">
-            <div className="flex">
+            <div className="flex nowrap">
                     <h3>{country.countries_and_territories}</h3>
                 <button onClick={()=>changeCountry(null)} className="close-btn">🗙</button>
             </div>
