@@ -21,3 +21,15 @@
         background-color: $blue;
     }
 }
+
+header {
+    svg {
+        width: 35px;
+    }
+    h1.flex {
+        justify-content: center;
+    }
+    h1 span {
+        margin: 0 5px;
+    }
+}

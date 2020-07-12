@@ -2,7 +2,7 @@ import React, { useState , useEffect ,useContext} from 'react';
 import { DataContext } from '../../contexts/DataContext';
 
 const Table = ({countries}) => {
-  const { changeCountry} = useContext(DataContext);
+  const { changeCountry , country:currentCountry} = useContext(DataContext);
     useEffect(()=>{
         setSort({by:'countries_and_territories', isDescSort: true})
         const newCountries = [...countries].sort((a, b) => a.countries_and_territories-b.countries_and_territories )
@@ -41,8 +41,11 @@ const Table = ({countries}) => {
             </thead>
             <tbody>
                 {sortedCountries.map((country) => ( 
-                    <tr className="table__tr" key={country.geo_id + country.date}>
-                        {rows.map(row => (<td className="table__td" key={row.prop} onClick={() =>changeCountry(country)}>{country[row.prop]}</td>))}
+                        <tr className="table__tr" key={country.geo_id + country.date}>
+                        {rows.map(row => (<td 
+                        className={`table__td ${currentCountry && country.geo_id === currentCountry.geo_id ? 'active' : ''} `} 
+                        key={row.prop} onClick={() =>changeCountry(country)}>{country[row.prop]}</td>
+                        ))}
                 </tr>
                 ))}
             </tbody>

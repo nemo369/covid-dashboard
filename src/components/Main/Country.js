@@ -16,6 +16,7 @@ const Country = () => {
         <div className="country-table">
             <div className="flex nowrap">
                     <h3>{country.countries_and_territories}</h3>
+                    <img src={`https://www.countryflags.io/${country.geo_id}/flat/64.png`} alt={country.countries_and_territories}/>
                 <button onClick={()=>changeCountry(null)} className="close-btn">🗙</button>
             </div>
             <table className="table">

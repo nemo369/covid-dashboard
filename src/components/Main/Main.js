@@ -5,6 +5,7 @@ import useInfo from '../../data/useInfo';
 import Table from './Table';
 import { DataContext } from '../../contexts/DataContext';
 import Country from './Country';
+import Loader from './shared/Loader';
 
 const Main = () => {
     const { dataType} = useContext(DataContext);
@@ -17,7 +18,7 @@ const Main = () => {
                 console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.")
           
             },[dataType.type, info])
-    if (loading) {return <p>Loading...</p>};
+    if (loading) {return <Loader/>};
     if (error) {return <p>Error...</p>};
     return ( 
     <main className="main">

@@ -22,15 +22,15 @@
     display: block;
     overflow: auto;
   }
-}
-.table,
-.country-table {
-  max-width: 99%;
-  width: 100%;
-  * {
+  .table,
+  .country-table {
+    max-width: 99%;
     width: 100%;
-  }
-  .close-btn {
-    width: rem(35);
+    * {
+      width: 100%;
+    }
+    .close-btn {
+      width: rem(35);
+    }
   }
 }

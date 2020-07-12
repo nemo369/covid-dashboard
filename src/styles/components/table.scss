@@ -36,7 +36,10 @@
         }
     }
 }
-
+.table__td.active {
+    background-color: $white;
+    cursor: initial;
+}
 .table__th,
 .table__td,
 .table__td * {

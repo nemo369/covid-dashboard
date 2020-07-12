@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../contexts/DataContext';
+import Icon from './Icon';
 const HeaderBar = () => {
   const { dataType,dataTypes ,numOfCountries, toglleData} = useContext(DataContext);
 
@@ -16,6 +17,7 @@ const HeaderBar = () => {
             }
           </ul>
         </nav>
+        <h1 className="flex"><Icon/><span>Covid-19 Dashboard:</span></h1>
       </header>
      );
   }
