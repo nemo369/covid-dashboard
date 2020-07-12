@@ -4,7 +4,7 @@ import {startCase} from '../../utils/utils'
 const Country = () => {
   const { country , changeCountry} = useContext(DataContext);
 
-    if(!country) return <div>No country choosed</div>
+    if(!country) return <div className="tac">No country chosen</div>
     const mapedCounty = {
         confirmed_cases :country.confirmed_cases,
         daily_confirmed_cases :country.daily_confirmed_cases,

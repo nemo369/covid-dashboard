@@ -19,10 +19,22 @@ const Table = ({countries}) => {
     ];
 
     const sortTable = (by, isDesc) =>{
-        setSort({by, isDescSort:isDesc})
-        const newCountries = [...countries].sort((a, b) => isDesc ? a[by]-b[by] : b[by]-a[by] )
+        setSort({by, isDescSort:isDesc});
+        let newCountries = [...countries];
+        if(by === 'countries_and_territories'){
+            newCountries.sort((a, b) => sortAlphabetically(a, b, isDesc, by) )
+
+        } else{
+            newCountries.sort((a, b) => isDesc ? a[by]-b[by] : b[by]-a[by] )
+        }
         setSortedCountries(newCountries)        
     }
+    const sortAlphabetically = (a ,b ,isDesc, by) =>{
+        if(a[by] < b[by]) { return isDesc ? -1 : 1; }
+        if(a[by] > b[by]) { return isDesc ? 1 : -1 }
+        return 0;
+    }
+
     return (  
         <table className="table">
             <thead>
