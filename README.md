@@ -5,11 +5,10 @@ Create a covid status dashboard:
 
 ## Guidelines:
 
-- ● Use React.js framework
-- ● Your dataset will be [https://static-cdn.workiz.com/various/covid-may-jul.json](https://static-cdn.workiz.com/various/covid-may-jul.json)
-- ● You can use any plugin
-- ● Style must be elegant and beautiful.
-- ● Frontend only - no backend, no database.
+- Use React.js framework
+- You can use any plugin
+- Style must be elegant and beautiful.
+- Frontend only - no backend, no database.
 
  ## Functionality:
 - ● You must implement 3 main data components:
@@ -23,8 +22,3 @@ choosing)
 ● Each click on one of the tables rows will present a drill down into that specific
 country’s data in a designated table.
 ● All tables will allow sorting, paging (if needed)
-    * For any questions please email me at fs@workiz.com , or just reply all to this email.
-    * When done please create a github private repository and send an invite to saarubio
-and rakefetworkiz
-
-Good Luck!
